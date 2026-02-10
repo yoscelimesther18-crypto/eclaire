@@ -117,6 +117,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .hero-overlay,
@@ -144,6 +145,12 @@ main {
   font-size: 3rem;
   margin-bottom: 14px;
 }
+
+.hero-video {
+  position: relative;
+  background: #000;
+}
+
 
 /* ================= HERO IMAGES ================= */
 .page-hero.reservas-hero {
