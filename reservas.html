@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservas | Éclaire Beauty Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Reserva tu cita en Éclaire Beauty Studio. Vive una experiencia de belleza premium y personalizada.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Reservas · Éclaire Beauty Studio ✨">
+  <meta property="og:description" content="Agenda tu cita y vive una experiencia de lujo en belleza.">
+  <meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/Imagenes/hero.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="Imagenes/servicio1.jpeg">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Imagenes/logo.png" alt="Éclaire Beauty Studio Logo">
+        <span>ÉCLAIRE</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="reservas.html" class="active">Reservas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="reservas-page">
+
+    <!-- HERO -->
+<section class="page-hero reservas-hero">
+  <div class="page-hero-content">
+    <h1>Reserva tu cita</h1>
+    <p>Un momento exclusivo, diseñado solo para ti</p>
+  </div>
+</section>
+
+    <!-- FORM -->
+<section class="reservas-form-section">
+
+  <form class="reservas-form" id="reservasForm">
+
+     <p id="mensajeReserva" class="mensaje-reserva"></p>
+
+    <div class="form-group">
+      <label>Nombre completo</label>
+      <input type="text" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label>Correo electrónico</label>
+      <input type="email" placeholder="correo@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label>Fecha de la cita</label>
+      <input type="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Servicio</label>
+      <select required>
+        <option value="">Selecciona un servicio</option>
+        <option>Corte & Styling</option>
+        <option>Color Premium</option>
+        <option>Tratamientos Capilares</option>
+        <option>Maquillaje & Peinado</option>
+      </select>
+    </div>
+
+    <<button type="submit" class="btn-primary">Confirmar reserva</button>
+
+    <p class="form-note">
+      Nuestro equipo confirmará tu cita vía correo o WhatsApp.
+    </p>
+
+    <!-- Mensaje de confirmación -->
+    <p id="mensajeReserva"></p>
+
+  </form>
+
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 · Éclaire Beauty Studio · Elegancia que se siente</p>
+  </footer>
+
+  <script src="js/reservas.js"></script>
+
+</body>
+</html>
