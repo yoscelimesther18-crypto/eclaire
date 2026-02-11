@@ -469,3 +469,54 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===========================
+   MENÚ MÓVIL - HAMBURGUESA
+=========================== */
+
+/* Oculta el toggle en desktop */
+.mobile-nav-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Estilos del menú desplegable en móvil */
+.mobile-menu {
+  position: fixed;
+  top: 90px; /* debajo del header */
+  right: -100%;
+  width: 100%;
+  height: calc(100% - 90px);
+  background: white;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+  padding-top: 30px;
+  text-align: center;
+  transition: right 0.3s ease;
+  z-index: 1500;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 14px 0;
+  font-size: 18px;
+  color: #1c1c1c;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Cuando el menú está activo */
+.mobile-menu.open {
+  right: 0;
+}
+
+/* Móvil solo */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Esconde menú de escritorio */
+  }
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
